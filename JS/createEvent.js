@@ -139,7 +139,7 @@ EventForm.event_name.addEventListener("input", (e) => {
   showname.innerText = EventForm.event_link.value
   let createdOn = new Date().toISOString().split(".")[0].split("T")[0]
 
-  let link = `mycal.com/${UserName}/${e.target.value}`;
+  let link = `bookingleads.apostlefortunate.com/${UserName}/${e.target.value}`;
   links.innerText = link
   showlinks.innerText = link
   showcreatedon.innerText = createdOn
@@ -163,7 +163,7 @@ EventForm.endDate.addEventListener("change", (e) => {
   showenddate.innerText = e.target.value
 })
 EventForm.event_link.addEventListener("input", (e) => {
-  let link = `mycal.com/${UserName}/${e.target.value}`;
+  let link = `bookingleads.apostlefortunate.com/${UserName}/${e.target.value}`;
   links.innerText = link
   showlinks.innerText = link
 })
