@@ -65,43 +65,33 @@ LoginForm.addEventListener("submit", (e) => {
 
 let login_user = async (obj) => {
   spinner.style.display = "flex"; //!Spinner
-  try {
-    const res = await fetch(loginUrl, {
-      method: 'POST',
-      body: JSON.stringify(loginDetails),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    if (res.ok) {
-      const loginData = await res.json();
-
-      if (loginData.success === false) {
-        swal('Login Failed', 'Wrong Credentials', 'error');
-        spinner.style.display = 'none';
-        return;
-      }
-
-      localStorage.setItem('accessToken', loginData.token);
-      localStorage.setItem('username', loginData.name);
-      localStorage.setItem('useremail', loginData.email);
-
-      if (loginData.token) {
-        spinner.style.display = 'none';
-        swal('Login Successful', 'Redirecting to Dashboard...', 'success');
-        setTimeout(() => {
-          spinner.style.display = 'none';
-          window.location.href = 'Dashboard.html';
-        }, 1000);
-      }
-    } else {
-      spinner.style.display = 'none';
-      swal('Error', 'Bad request', 'error');
+  let res = await fetch(`${EventBaseURL}/users/login`, {
+    method: "POST",
+    body: JSON.stringify(obj),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }
+  );
+  if (res.ok) {
+    let LoginData = await res.json();
+    if (LoginData.success == false) {
+      swal("Login Failed", "Wrong Credentials", "error");
+      spinner.style.display = "none"; //!Spinner
+      return;
     }
-  } catch (error) {
-    spinner.style.display = 'none';
-    swal('Error', 'Something went wrong', 'error');
-    console.error('Error in Login:', error);
+    // console.log(LoginData);
+    localStorage.setItem("accessToken", LoginData.token);
+    localStorage.setItem("username", LoginData.name);
+    localStorage.setItem("useremail", LoginData.email);
+
+    if (LoginData.token) {
+      spinner.style.display = "none"; //!Spinner
+      swal("Login Successful", "Redirecting to Dashboard...", "success");
+      setTimeout(() => {
+        spinner.style.display = "none"; //!Spinner
+        window.location.href = "Dashboard.html";
+      }, 1000);
+    }
   }
 };
