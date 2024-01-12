@@ -1,4 +1,4 @@
-let EventBaseURL = "https://my-cal-com-backend.vercel.app"
+let EventBaseURL = "https://my-cal-com-backend-nine.vercel.app"
 
 //! IF USER NOT PRESENT ---> 
 let UserEmail = localStorage.getItem("useremail");

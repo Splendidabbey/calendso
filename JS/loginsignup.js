@@ -1,7 +1,7 @@
 
 
 
-const EventBaseURL = `https://my-cal-com-backend.vercel.app`;
+const EventBaseURL = `https://my-cal-com-backend-nine.vercel.app`;
 
 const usersUrl = `${EventBaseURL}/users`;
 const signinUrl = `${usersUrl}/register`;

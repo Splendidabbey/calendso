@@ -1,5 +1,5 @@
 
-const EventBaseURL = "https://my-cal-com-backend.vercel.app"
+const EventBaseURL = "https://my-cal-com-backend-nine.vercel.app"
 
 const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),

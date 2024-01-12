@@ -28,6 +28,6 @@ document.addEventListener("click", (e) => {
 let GoogleRedirects = document.getElementsByClassName("googleRedirect");
 for (let i = 0; i < GoogleRedirects.length; i++) {
   GoogleRedirects[i].addEventListener("click", () => {
-    window.location.href = "https://my-cal-com-backend.vercel.app/google"
+    window.location.href = "https://my-cal-com-backend-nine.vercel.app/google"
   })
 }
