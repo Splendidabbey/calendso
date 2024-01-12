@@ -66,7 +66,7 @@ LoginForm.addEventListener("submit", (e) => {
 let login_user = async (obj) => {
   spinner.style.display = "flex"; //!Spinner
   try {
-    const res = await fetch(signinUrl, {
+    const res = await fetch(loginUrl, {
       method: 'POST',
       body: JSON.stringify(loginDetails),
       headers: {
