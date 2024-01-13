@@ -18,7 +18,7 @@ if (params.successId) {
             <h1 style="font-size: 30px; font-weight: 500">
               Authentication Successful
             </h1>
-            <p>Welcome to Mycal Web Service</p>
+            <p>Welcome to bookingLeads Web Service</p>
             <br />
             <button id="LetsGoButton">Go to Home Page</button>
           </div>
@@ -33,7 +33,7 @@ if (params.successId) {
             <h1 style="font-size: 30px; font-weight: 500">
               Authentication Successful
             </h1>
-            <p>Welcome to Mycal Web Service</p>
+            <p>Welcome to bookingLeads Web Service</p>
             <br />
             <button id="LetsGoButton">Go to Home Page</button>
           </div>

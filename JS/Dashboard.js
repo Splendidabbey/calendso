@@ -88,7 +88,7 @@ function RenderData(data) {
       <p><span style="font-size:14px;color:#075cd4"> View Booking Data</span></p>
       </div>
       <hr>
-      <div id="link">Link : <a href="#" style="font-size:14px">${link}/.event.mycal.com</a></div>
+      <div id="link">Link : <a href="#" style="font-size:14px">${link}/.event.bookingleads.apostlefortunate.com</a></div>
       <button data-id=${item._id} class="Deleter">Delete</button>
   </div>
       

@@ -1,14 +1,14 @@
-# MyCal.com-Frontend
+# bookingleads.apostlefortunate.com-Frontend
 
-# Introducing MyCal.com  (Clone of Calendly.com)
+# Introducing bookingleads.apostlefortunate.com  (Clone of Calendly.com)
 - Link : -https://mycal.netlify.app/ 
 
-- This is the Frontend Repository of MyCal.com,
-- Backend repo here --> https://github.com/KunalMehra075/MyCal.com-Backend/tree/main
+- This is the Frontend Repository of bookingleads.apostlefortunate.com,
+- Backend repo here --> https://github.com/KunalMehra075/bookingleads.apostlefortunate.com-Backend/tree/main
 
 ![MyCalgt](https://user-images.githubusercontent.com/112753481/221043576-4501abd5-d872-4171-b56a-6e27f607fa9a.png)
 
-# What is MyCal.com??
+# What is bookingleads.apostlefortunate.com??
 
 MyCal is your scheduling automation platform for eliminating the back-and-forth emails for finding the perfect time — and so much more.
 It is a tool for scheduling appointments and events. It eliminates the usual back-and-forth emails and messages involved in nailing down time.
